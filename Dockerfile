@@ -27,7 +27,7 @@ COPY . .
 RUN mkdir -p data
 
 # Expose the port the app runs on
-EXPOSE 8000
+EXPOSE 5005
 
 # Command to run the application
 CMD ["python", "chatbot.py"] 
