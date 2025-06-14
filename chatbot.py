@@ -58,14 +58,31 @@ def buat_vectorstore():
 # --- Chatbot ---
 print("Menginisialisasi chatbot...")
 
-# Remove existing database directory if it exists
-if os.path.exists("db"):
-    print("Menghapus database lama...")
-    shutil.rmtree("db")
-
-print("Membuat database baru...")
+# Initialize embeddings
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-db = Chroma(persist_directory="db", embedding_function=embeddings)
+
+# Initialize or create database
+if not os.path.exists("db"):
+    print("Membuat database baru...")
+    # Load dan split dokumen
+    loader = TextLoader("data/panduan.txt", encoding="utf-8")
+    documents = loader.load()
+    
+    # Split dokumen menjadi chunks yang lebih kecil
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=4000,
+        chunk_overlap=700
+    )
+    docs = text_splitter.split_documents(documents)
+    
+    # Buat embeddings dan simpan ke vectorstore
+    db = Chroma.from_documents(docs, embeddings, persist_directory="db")
+    db.persist()
+    print("Database berhasil dibuat!")
+else:
+    print("Menggunakan database yang sudah ada...")
+    db = Chroma(persist_directory="db", embedding_function=embeddings)
+
 retriever = db.as_retriever(
     search_kwargs={
         "k": 3  # Meningkatkan jumlah dokumen yang diambil
