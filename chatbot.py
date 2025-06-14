@@ -33,6 +33,7 @@ class ChatRequest(BaseModel):
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key="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",
+    http_client=None  # Remove any proxy settings
 )
 
 # --- Hanya dijalankan sekali untuk membuat vectorstore ---
