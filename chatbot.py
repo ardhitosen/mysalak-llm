@@ -2,12 +2,12 @@ from langchain_community.document_loaders import TextLoader
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from openai import OpenAI
 import os
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import uvicorn
+import openai
 
 # Set your OpenRouter API token
 os.environ["OPENAI_API_KEY"] = "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"
@@ -30,7 +30,8 @@ class ChatRequest(BaseModel):
     question: str
 
 # Initialize OpenAI client
-client = OpenAI()
+openai.api_key = os.environ["OPENAI_API_KEY"]
+openai.api_base = os.environ["OPENAI_API_BASE"]
 
 # --- Hanya dijalankan sekali untuk membuat vectorstore ---
 def buat_vectorstore():
@@ -140,7 +141,7 @@ Contoh:
 - Jangan mencampur informasi antara admin dan petani"""
 
         # Make the API call
-        completion = client.chat.completions.create(
+        completion = openai.ChatCompletion.create(
             model="deepseek/deepseek-r1-0528-qwen3-8b:free",
             messages=[
                 {
