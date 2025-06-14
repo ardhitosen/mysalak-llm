@@ -1,0 +1,403 @@
+MySalak adalah Aplikasi Pertanian Pintar Untuk Pengendalian Hama Pada Tanaman MySalak
+
+MySalak Dikembangkan oleh Program Studi Teknik Komputer Universitas Multimedia
+Nusantara dan Fakultas Pertanian, Universitas Gadjah Mada.
+
+Langkah-langkah membuka aplikasi MySalak
+
+Ketika Anda membuka aplikasi MySalak, Anda akan melihat tampilan seperti
+gambar di atas. Untuk mulai menggunakan aplikasi ini, Anda dapat memilih salah
+satu dari dua opsi berikut:
+1. Masuk sebagai Admin: Pilih opsi ini jika Anda adalah admin dari
+kelompok tani.
+2. Masuk sebagai Petani: Pilih opsi ini jika Anda adalah petani.
+
+
+Jika Anda belum memiliki akun, silakan membuat akun terlebih dahulu dengan
+menekan tombol Buat akun sekarang.
+
+Membuat Akun Baru
+Untuk membuat akun baru, isi data berikut:
+● Nama Lengkap: Masukkan nama lengkap Anda.
+● No Telepon: Masukkan nomor telepon yang aktif dan bisa dihubungi.
+● Nama Kelompok Tani: Pilih nama kelompok tani Anda dari daftar yang
+tersedia.
+Setelah semua data terisi, tekan tombol Buat Akun untuk menyelesaikan
+pendaftaran.
+
+Halaman Login untuk Petani dan Admin
+
+Login sebagai Petani
+Petani dapat masuk ke aplikasi MySalak dengan mengisi data berikut:
+● Nama Lengkap: Masukkan nama lengkap Anda.
+● No Telepon: Masukkan nomor telepon Anda yang telah didaftarkan.
+● Nama Kelompok Tani: Pilih nama kelompok tani Anda dari daftar yang
+tersedia.
+Setelah data terisi lengkap, tekan tombol Masuk untuk melanjutkan.
+
+Login sebagai Admin
+Admin dapat masuk ke aplikasi dengan memasukkan data berikut:
+● Email: Masukkan email yang telah didaftarkan.
+● Password: Masukkan kata sandi Anda.
+Jika sudah mengisi email dan password, tekan tombol Masuk untuk melanjutkan.
+
+Menu Petani
+Berikut adalah menu utama yang tampil ketika berhasil masuk ke dalam
+aplikasi. Dari menu ini ada beberapa fitur yang bisa dibuka, yaitu (1) Profil, (2)
+Informasi Cuaca, (3) Manajemen Hama, (4) Peta Persebaran Hama, (5) Foto
+Hitung Hama, dan (6) Artikel.
+Deskripsi Bagian Navigation Bar (di bawah layar)
+Navigation Bar adalah alat untuk berpindah antar halaman di aplikasi
+MySalak. 
+Berikut penjelasannya:
+1. Ikon Rumah (Paling Kiri)
+○ Membawa Anda ke halaman utama.
+○ Berisi informasi penting tentang kebun, seperti prakiraan cuaca
+dan status kebun Anda.
+2. Ikon Peta (Sebelah Kanan Ikon Rumah)
+○ Membuka halaman peta persebaran hama.
+○ Di sini, Anda bisa melihat penyebaran hama di sekitar kebun
+dalam bentuk peta interaktif.
+3. Ikon Kamera (Tengah)
+○ Menu untuk foto hitung hama.
+○ Gunakan kamera untuk memotret hama lalat buah, dan aplikasi
+akan membantu menghitung jumlahnya secara otomatis.
+4. Ikon Serangga (Sebelah Kanan Ikon Kamera)
+○ Membawa Anda ke menu manajemen hama.
+○ Halaman ini menunjukkan perkembangan jumlah hama di kebun,
+termasuk grafik dan data lainnya untuk kelompok tani.
+5. Ikon Buku (Paling Kanan)
+○ Menu artikel untuk membaca informasi penting.
+○ Di sini, Anda akan menemukan tips tentang pengelolaan kebun
+dan cara mengatasi hama dari sumber terpercaya.
+Setelah mengetuk menu “Prediksi Hama”, maka akan muncul pop-up baru
+yang menampilkan status hama lalat, kutu putih, kumbang girang, tikus, dan
+bajing beserta jumlahnya di kebun tersebut. Jika muncul kata “Banyak”, maka
+artinya sedang banyak hama tersebut di kebun.
+
+Profil
+Pada halaman Profil, petani dapat melihat informasi akun yang telah dibuat.
+● Akun baru yang belum terverifikasi akan ditandai dengan status "belum
+terverifikasi".
+● Untuk melakukan verifikasi, petani dapat menghubungi ketua kelompok
+tani masing-masing.
+Petani juga dapat mengubah informasi pada profil, seperti:
+● Mengganti foto profil.
+● Mengedit nama lengkap, nomor telepon, atau kelompok tani.
+
+Langkah 1: Buka Halaman Profil
+1. Pada menu navigasi bawah, pilih ikon dengan gambar orang hijau untuk
+membuka halaman Profil.
+2. Pada halaman ini, informasi akun Anda ditampilkan, termasuk:
+○ Nama Lengkap
+○ Nomor Telepon
+○ Kelompok Tani
+
+Langkah 2: Ketuk Tombol "Edit Profil"
+1. Untuk melakukan penyuntingan data diri, ketuk tombol Edit Profil yang
+terletak di bawah foto profil.
+2. Setelah mengetuk tombol ini, Anda akan diarahkan ke halaman Edit
+Profil.
+
+Langkah 3: Perbarui Informasi Profil
+1. Pada halaman Edit Profil, Anda dapat memperbarui data diri berikut:
+○ Nama Lengkap: Masukkan nama sesuai dengan pembaruan.
+○ No Telepon: Edit nomor telepon Anda jika diperlukan.
+○ Kelompok Tani: Pilih atau perbarui nama kelompok tani yang
+sesuai dari dropdown.
+2. Pastikan informasi yang dimasukkan sudah benar sebelum menyimpan
+perubahan.
+
+Langkah 4: Simpan Perubahan
+1. Setelah selesai memperbarui informasi, tekan tombol Simpan untuk
+menyimpan data yang telah diperbarui.
+2. Sistem akan memperbarui data Anda, dan Anda akan diarahkan kembali
+ke halaman profil dengan informasi terbaru.
+
+Catatan Penting
+● Jangan lupa untuk memeriksa kembali data yang Anda ubah sebelum
+menyimpan agar tidak ada kesalahan.
+● Jika ingin membatalkan perubahan, tekan tombol Batal untuk keluar
+tanpa menyimpan.
+
+Informasi Cuaca
+Terdapat dua jenis ramalan cuaca:
+1. Ramalan 24 jam untuk informasi cuaca harian.
+2. Ramalan hingga 7 hari ke depan, yang merupakan rata-rata prediksi
+cuaca untuk setiap hari.
+Informasi ini membantu petani merencanakan kegiatan di kebun.
+Berikut adalah deskripsi dan langkah-langkah penggunaannya:
+
+Halaman Utama Prediksi Cuaca
+1. Informasi Cuaca Saat Ini:
+○ Menampilkan suhu udara terkini (contoh: 26.7°C).
+○ Indikator lain yang disediakan:
+■ Curah Hujan (%): Persentase kemungkinan hujan.
+■ Radiasi Matahari: Intensitas radiasi dalam satuan W/m².
+■ Kelembapan Udara (%): Tingkat kelembapan udara di
+lokasi.
+
+2. Prediksi Cuaca 24 Jam ke Depan:
+○ Ditampilkan dalam interval waktu tertentu (contoh: 18:00, 21:00,
+00:00).
+○ Setiap slot waktu menampilkan:
+■ Suhu udara.
+■ Informasi tambahan, seperti kondisi cuaca (hujan,
+berawan, cerah, dll.).
+
+3. Ramalan Cuaca 7 Hari:
+○ Menampilkan prediksi cuaca harian selama 7 hari ke depan.
+○ Informasi meliputi:
+■ Suhu maksimal dan minimal.
+■ Kondisi cuaca secara umum.
+
+Langkah-Langkah Penggunaan
+1. Akses Menu Prediksi Cuaca:
+a. Tekan ikon lingkaran hijau dengan simbol cuaca di bagian
+bawah aplikasi untuk membuka halaman prediksi cuaca.
+2. Lihat Informasi Detail Cuaca:
+a. Pada halaman utama, periksa suhu terkini dan detail prediksi
+cuaca 24 jam ke depan.
+3. Melihat Ramalan Cuaca 7 Hari:
+a. Jika ingin melihat lebih banyak informasi tentang cuaca, ketuk
+tombol "Lihat Semua" pada bagian Ramalan 7 Hari.
+b. Halaman baru akan menampilkan prediksi cuaca untuk setiap hari
+secara terperinci.
+
+Manajemen Hama
+Halaman ini menampilkan informasi tentang FTD (fruit flies per trap per day)
+pada setiap kebun.
+Petani dapat membuka detail salah satu kebun, yang memuat: History
+(rekapan) FTD dan data hama yang telah dihitung.
+Berikut penjelasannya:
+1. Tampilan Daftar Kebun
+● Lokasi: Di bagian kiri layar, ditampilkan dalam bentuk grid dengan
+informasi kebun masing-masing.
+● Detail Setiap Kebun:
+○ Nama Kebun: Contoh: "Sumber Mulyo", "Si Cantik", dll.
+○ Tanggal Data: Ditampilkan pada setiap kotak kebun.
+13
+○ Nilai FTD berdasarkan tangkapan lalat buah (FTD): Contoh: 2,
+31, 25, dll.
+
+Cara Menggunakan:
+● Ketuk salah satu kotak kebun untuk melihat detail lebih lanjut mengenai
+data tangkapan hama pada kebun tersebut.
+2. Halaman Detail Kebun
+● Setelah memilih salah satu kebun, Anda akan diarahkan ke halaman
+detail yang menampilkan:
+○ Nama Kebun dan Tanggal: Contoh: "Kembang Mulyo -
+23/09/2024."
+○ FTD: Ditampilkan secara besar (contoh: 2).
+
+Rekap Status FTD
+● Terdapat indikator warna untuk mempermudah pemantauan:
+○ Hijau: Jumlah tangkapan masih aman.
+○ Kuning: Perlu waspada.
+○ Merah: Kondisi kritis dan memerlukan tindakan segera.
+
+Grafik Histori FTD
+● Grafik di bagian bawah menunjukkan tren jumlah tangkapan hama dalam
+periode tertentu (contoh: bulan Januari).
+● Membantu memantau fluktuasi jumlah hama secara visual.
+
+Peta Persebaran Hama
+Pada peta persebaran, petani dapat melihat letak setiap kebun salak di
+wilayah mereka.
+Dengan mengetuk bagian yang diberi warna, petani dapat mengakses
+informasi berikut:
+● Status kebun.
+● Data FTD.
+● Jumlah perangkap hama di kebun tersebut.
+Warna pada peta menunjukkan status kebun, seperti kondisi hama atau tingkat
+infestasi.
+
+Berikut adalah penjelasan langkah-langkah penggunaan fitur pada gambar Peta
+Persebaran Hama:
+1. Pilih Area Kebun
+● Pada halaman Persebaran Hama, peta menampilkan area kebun
+kelompok tani yang ditandai dengan garis tepi oranye.
+● Langkah: Ketuk area kebun yang ingin Anda kelola untuk melihat
+informasi terkait manajemen hama pada area tersebut.
+● Contoh area kebun: Kembang Mulyo atau Sido Makmur.
+2. Lihat Kotak Informasi Manajemen Hama
+● Setelah memilih area kebun, akan muncul kotak informasi yang memuat
+data kebun seperti:
+○ Status: Indikator kondisi hama di kebun tersebut, seperti "Aman”,
+“Waspada”, atau “Bahaya”
+○ FTD (Fruit Fly Trapped per Day), ditampilkan dalam angka.
+
+Foto Hitung Hama
+Melalui fitur hitung hama, petani dapat mengambil foto hasil tangkapan lalat dan
+kemudian jumlah lalat akan dihitung secara otomatis oleh sistem.
+Berikut merupakan detail penggunaannya.
+1. Tampilan Utama Kamera
+● Fungsi: Menampilkan tangkapan kamera secara langsung untuk
+mengambil gambar hama yang akan dihitung.
+2. Tombol Mengambil Gambar
+● Lokasi: Berada di tengah bawah layar, berbentuk bulat besar.
+● Fungsi:
+○ Ketuk tombol ini untuk mengambil gambar hama pada perangkap
+atau area yang ingin dianalisis.
+○ Gambar yang diambil akan digunakan untuk proses perhitungan
+hama.
+3. Tombol Mengubah Kamera
+● Lokasi: Di sebelah kanan tombol mengambil gambar, berbentuk ikon
+panah berputar.
+● Fungsi:
+○ Gunakan tombol ini untuk beralih antara kamera depan dan
+kamera belakang, sesuai kebutuhan.
+4. Tombol Kembali
+● Lokasi: Di pojok kiri atas layar, berbentuk panah.
+● Fungsi:
+○ Ketuk tombol ini untuk kembali ke halaman sebelumnya tanpa
+mengambil gambar.
+
+Artikel
+Pada menu ini terdapat banyak informasi mengenai hama-hama, seperti cara
+mengatasi dan penanganan hama.
+Menu Artikel menyediakan berbagai informasi tentang hama, termasuk cara
+pencegahan dan penanganannya.
+
+1. Pencarian Artikel
+● Fungsi: Mempermudah pengguna menemukan artikel tertentu.
+● Cara Menggunakan:
+○ Ketuk kolom pencarian bertuliskan "Cari artikel/tips & trik
+lainnya...".
+○ Ketikkan kata kunci terkait artikel yang dicari, misalnya "Lalat
+Buah."
+
+2. Daftar Artikel Terbaru
+● Artikel terbaru ditampilkan di bagian atas dengan label "Terbaru".
+● Informasi yang ditampilkan meliputi:
+○ Judul Artikel: Misalnya, "Lalat Buah: Cara Pencegahan dan
+Pembasmian."
+○ Waktu Membaca: Indikasi durasi membaca artikel (contoh: 15
+menit membaca).
+○ Tanggal Publikasi: Menunjukkan tanggal artikel diterbitkan.
+● Cara Membuka Artikel:
+○ Ketuk salah satu artikel untuk membaca isi selengkapnya.
+
+3. Artikel untuk Anda
+● Bagian ini menampilkan artikel yang direkomendasikan berdasarkan
+minat atau preferensi pengguna.
+● Terdapat tombol "Lihat Semua" untuk melihat daftar artikel lainnya.
+● Fitur Simpan Artikel:
+○ Ketuk ikon bookmark di samping judul artikel untuk menyimpan
+artikel favorit Anda. Artikel yang disimpan dapat diakses kembali
+melalui menu khusus.
+
+4. Halaman Bacaan Artikel
+● Setelah memilih artikel, Anda akan diarahkan ke halaman bacaan yang
+menampilkan:
+○ Kategori: Misalnya "Tips & Trik."
+○ Judul Artikel: Misalnya, "Lalat Buah: Cara Pencegahan dan
+Pembasmian."
+○ Konten Artikel: Penjelasan mendalam, seperti:
+■ Status hama.
+■ Tanaman yang diserang.
+■ Solusi pencegahan dan pembasmian.
+○ Tombol Kembali: Ketuk tombol panah di pojok kiri atas untuk
+kembali ke daftar artikel.
+
+Menu Admin Ketua Tani
+Peta Persebaran Hama
+Fitur ini memungkinkan ketua kelompok tani untuk mengelola jumlah perangkap
+hama di area kebun masing-masing. Berikut adalah langkah-langkah
+penggunaannya:
+
+Berikut adalah penjelasan langkah-langkah penggunaan fitur pada gambar Peta
+Persebaran Hama:
+1. Pilih Area Kebun
+● Pada halaman Persebaran Hama, peta menampilkan area kebun
+kelompok tani yang ditandai dengan garis tepi oranye.
+● Langkah: Ketuk area kebun yang ingin Anda kelola untuk melihat
+informasi terkait manajemen hama pada area tersebut.
+● Contoh area kebun: Kembang Mulyo atau Sido Makmur.
+
+2. Lihat Kotak Informasi Manajemen Hama
+● Setelah memilih area kebun, akan muncul kotak informasi yang memuat
+data kebun seperti:
+○ Status: Indikator kondisi hama di kebun tersebut, seperti "Aman”,
+“Waspada”, atau “Bahaya”
+○ FTD (Fruit Fly Trapped per Day), ditampilkan dalam angka.
+○ Jumlah Perangkat: Pengguna dapat menambah atau
+mengurangi jumlah perangkat pengawasan hama langsung dari
+kotak ini.
+
+3. Tambah atau Kurangi Perangkat
+● Di dalam kotak informasi, ketua kelompok tani dapat mengelola jumlah
+perangkat yang dipasang pada kebun kelompok tani yang diketuai.
+● Langkah:
+○ Gunakan opsi Tambah (+) untuk menambah perangkat baru.
+○ Gunakan opsi Kurangi (-) untuk mengurangi perangkat yang tidak
+diperlukan.
+● Perubahan ini bertujuan untuk menyesuaikan perangkat dengan
+kebutuhan monitoring di area tersebut.
+
+Verifikasi Anggota
+Ketua kelompok tani dapat melihat anggota yang sudah mendaftarkan, dan bisa
+memverifikasi anggotanya.
+Fitur ini memungkinkan ketua kelompok tani untuk memverifikasi anggota yang
+telah mendaftar ke dalam kelompok tani. Berikut langkah-langkah penggunaan
+fitur:
+
+1. Mengakses Menu Verifikasi
+● Tekan ikon dengan simbol lingkaran hijau dengan tanda centang di
+bagian navigasi bawah aplikasi untuk membuka halaman "Verifikasi
+Anggota."
+
+2. Melihat Daftar Anggota yang Belum Diverifikasi
+● Pada layar akan ditampilkan daftar anggota yang telah mendaftar namun
+belum diverifikasi.
+○ Contoh:
+■ Juan (08123654321)
+■ Sumpeno (08398744524)
+
+3. Memverifikasi Anggota
+● Untuk memverifikasi anggota:
+1. Ketuk ikon centang hijau di samping nama anggota.
+2. Setelah proses verifikasi berhasil, tanda centang hijau akan
+berubah menjadi tanda centang tetap, menunjukkan bahwa
+anggota tersebut telah diverifikasi.
+
+Menu Admin Dinas
+Admin Dinas dapat memberi saran tindakan, himbauan, ataupun peringatan
+kepada setiap kelompok tani. Pesan yang dikirimkan akan muncul sebagai
+notifikasi kepada akun ketua dari kelompok tani yang dipilih.
+
+Fitur ini memungkinkan pengguna untuk mengirim notifikasi berupa saran,
+himbauan, atau peringatan kepada kelompok tani yang terdaftar. Berikut
+langkah-langkah penggunaan:
+1. Mengakses Menu
+● Tekan ikon dengan simbol kartu nama di bagian navigasi bawah
+aplikasi untuk membuka menu "Peringatkan Kelompok Tani."
+
+2. Memilih Kelompok Tani
+● Pada layar utama fitur, daftar kelompok tani akan ditampilkan.
+● Contoh: Sumber Mulyo dan Si Cantik.
+● Ketuk salah satu kelompok tani yang ingin diberikan peringatan atau
+notifikasi.
+
+3. Memilih Jenis Notifikasi
+● Setelah memilih kelompok tani, kotak opsi akan terbuka.
+● Pilih jenis notifikasi yang akan dikirimkan melalui dropdown menu,
+seperti:
+○ Saran: Memberikan masukan ringan.
+○ Himbauan: Memberikan arahan untuk tindakan tertentu.
+○ Peringatan: Memberikan informasi penting atau mendesak.
+
+4. Menulis Pesan
+● Pada kolom teks "Pesan", masukkan konten notifikasi yang ingin
+disampaikan kepada kelompok tani.
+
+5. Mengirim Notifikasi
+● Setelah memilih jenis notifikasi dan menulis pesan, tekan tombol ikon
+panah (>) untuk mengirim pesan.
+● Notifikasi akan langsung dikirimkan ke ketua kelompok tani yang dituju.
+Menu Bantuan
+Apabila memiliki kendala pada saat menggunakan aplikasi ataupun ada kritik dan
+saran dapat menghubungi melalui:
+1. Email : mysalak.turi@gmail.com
+Setelah itu, mohon ditunggu untuk balasan atau panduan berikutnya. Terima
+kasih.
