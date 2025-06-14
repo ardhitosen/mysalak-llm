@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import uvicorn
 import openai
+import shutil
 
 # Set your OpenRouter API token
 os.environ["OPENAI_API_KEY"] = "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"
@@ -57,13 +58,12 @@ def buat_vectorstore():
 # --- Chatbot ---
 print("Menginisialisasi chatbot...")
 
-# Cek apakah vectorstore sudah ada
-if not os.path.exists("db"):
-    print("Vectorstore belum ada, membuat baru...")
-    buat_vectorstore()
-else:
-    print("Menggunakan vectorstore yang sudah ada...")
+# Remove existing database directory if it exists
+if os.path.exists("db"):
+    print("Menghapus database lama...")
+    shutil.rmtree("db")
 
+print("Membuat database baru...")
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 db = Chroma(persist_directory="db", embedding_function=embeddings)
 retriever = db.as_retriever(
