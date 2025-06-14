@@ -1,5 +1,6 @@
-langchain==0.1.14
-langchain-community==0.0.21
+langchain==0.1.13
+langchain-community==0.0.20
+
 fastapi==0.104.1
 uvicorn==0.24.0
 sentence-transformers==2.2.2
