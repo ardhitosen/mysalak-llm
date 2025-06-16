@@ -9,7 +9,6 @@ services:
     environment:
       - OPENAI_API_KEY=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
     restart: unless-stopped
-    network_mode: "host"
     ports:
       - "5005:5005"
 
