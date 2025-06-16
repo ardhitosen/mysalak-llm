@@ -8,4 +8,26 @@ services:
       - ./data:/app/data
     environment:
       - OPENAI_API_KEY=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
-    restart: unless-stopped 
+    restart: unless-stopped
+    network_mode: "host"
+    ports:
+      - "5005:5005"
+
+  nginx:
+    image: nginx:latest
+    container_name: mysalak-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/chatbot.conf:ro
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    depends_on:
+      - chatbot
+    restart: unless-stopped
+    networks:
+      - chatbot-network
+
+networks:
+  chatbot-network:
+    driver: bridge 
