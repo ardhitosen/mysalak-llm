@@ -11,7 +11,7 @@ import openai
 import shutil
 
 # Set your OpenRouter API token
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
 os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
 
 # Initialize FastAPI app
@@ -33,6 +33,10 @@ class ChatRequest(BaseModel):
 # Initialize OpenAI client
 openai.api_key = os.environ["OPENAI_API_KEY"]
 openai.api_base = os.environ["OPENAI_API_BASE"]
+openai.default_headers = {
+    "HTTP-Referer": "https://mysalak.com",  # Required for OpenRouter
+    "X-Title": "MySalak Chatbot"  # Optional, but helpful
+}
 
 # --- Hanya dijalankan sekali untuk membuat vectorstore ---
 def buat_vectorstore():
