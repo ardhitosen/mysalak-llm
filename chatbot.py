@@ -65,7 +65,13 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-
 if not os.path.exists("db"):
     print("Membuat database baru...")
     # Load dan split dokumen
-    loader = TextLoader("data/panduan.txt", encoding="utf-8")
+    data_path = os.path.join("data", "panduan.txt")
+    print(f"Mencoba membaca file dari: {os.path.abspath(data_path)}")
+    if not os.path.exists(data_path):
+        print(f"Error: File tidak ditemukan di {data_path}")
+        raise FileNotFoundError(f"File tidak ditemukan: {data_path}")
+        
+    loader = TextLoader(data_path, encoding="utf-8")
     documents = loader.load()
     
     # Split dokumen menjadi chunks yang lebih kecil
