@@ -7,8 +7,12 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import uvicorn
-from openai import OpenAI
+import openai
 import shutil
+
+# Set your OpenRouter API token
+os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_BASE"] = "https://openrouter.ai/api/v1"
 
 # Initialize FastAPI app
 app = FastAPI()
@@ -27,10 +31,8 @@ class ChatRequest(BaseModel):
     question: str
 
 # Initialize OpenAI client
-client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
-    api_key="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"
-)
+openai.api_key = os.environ["OPENAI_API_KEY"]
+openai.api_base = os.environ["OPENAI_API_BASE"]
 
 # --- Hanya dijalankan sekali untuk membuat vectorstore ---
 def buat_vectorstore():
@@ -162,11 +164,7 @@ Contoh:
 - Jangan mencampur informasi antara admin dan petani"""
 
         # Make the API call
-        completion = client.chat.completions.create(
-            extra_headers={
-                "HTTP-Referer": "https://mysalak.com",
-                "X-Title": "MySalak Chatbot"
-            },
+        completion = openai.ChatCompletion.create(
             model="deepseek/deepseek-r1-0528-qwen3-8b:free",
             messages=[
                 {
