@@ -61,33 +61,41 @@ print("Menginisialisasi chatbot...")
 # Initialize embeddings
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
-# Initialize or create database
-if not os.path.exists("db"):
-    print("Membuat database baru...")
-    # Load dan split dokumen
-    data_path = os.path.join("data", "panduan.txt")
-    print(f"Mencoba membaca file dari: {os.path.abspath(data_path)}")
-    if not os.path.exists(data_path):
-        print(f"Error: File tidak ditemukan di {data_path}")
-        raise FileNotFoundError(f"File tidak ditemukan: {data_path}")
-        
-    loader = TextLoader(data_path, encoding="utf-8")
-    documents = loader.load()
-    
-    # Split dokumen menjadi chunks yang lebih kecil
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=4000,
-        chunk_overlap=700
-    )
-    docs = text_splitter.split_documents(documents)
-    
-    # Buat embeddings dan simpan ke vectorstore
-    db = Chroma.from_documents(docs, embeddings, persist_directory="db")
-    db.persist()
-    print("Database berhasil dibuat!")
-else:
-    print("Menggunakan database yang sudah ada...")
-    db = Chroma(persist_directory="db", embedding_function=embeddings)
+# Force recreate databaseAdd commentMore actions
+print("Memaksa pembuatan database baru...")
+if os.path.exists("db"):
+    print("Menghapus database lama...")
+    shutil.rmtree("db")
+
+print("Membuat database baru...")
+# Load dan split dokumen
+data_path = os.path.join("data", "panduan.txt")
+print(f"Mencoba membaca file dari: {os.path.abspath(data_path)}")
+print(f"File exists: {os.path.exists(data_path)}")
+print(f"Current working directory: {os.getcwd()}")
+print(f"Directory contents: {os.listdir('.')}")
+print(f"Data directory contents: {os.listdir('data')}")
+
+if not os.path.exists(data_path):
+    print(f"Error: File tidak ditemukan di {data_path}")
+    raise FileNotFoundError(f"File tidak ditemukan: {data_path}")
+
+loader = TextLoader(data_path, encoding="utf-8")
+documents = loader.load()
+print(f"Jumlah dokumen yang dimuat: {len(documents)}")
+
+# Split dokumen menjadi chunks yang lebih kecil
+text_splitter = RecursiveCharacterTextSplitter(
+    chunk_size=4000,
+    chunk_overlap=700
+)
+docs = text_splitter.split_documents(documents)
+print(f"Jumlah chunks yang dibuat: {len(docs)}")
+
+# Buat embeddings dan simpan ke vectorstore
+db = Chroma.from_documents(docs, embeddings, persist_directory="db")
+db.persist()
+print("Database berhasil dibuat!")
 
 retriever = db.as_retriever(
     search_kwargs={
