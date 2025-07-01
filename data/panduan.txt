@@ -16,8 +16,8 @@ kelompok tani.
 Jika Anda belum memiliki akun, silakan membuat akun terlebih dahulu dengan
 menekan tombol Buat akun sekarang.
 
-Membuat Akun Baru
-Untuk membuat akun baru, isi data berikut:
+Cara Registrasi atau Membuat Akun Baru
+Untuk registerasi, isi data berikut:
 ● Nama Lengkap: Masukkan nama lengkap Anda.
 ● No Telepon: Masukkan nomor telepon yang aktif dan bisa dihubungi.
 ● Nama Kelompok Tani: Pilih nama kelompok tani Anda dari daftar yang
@@ -47,6 +47,8 @@ aplikasi. Dari menu ini ada beberapa fitur yang bisa dibuka, yaitu (1) Profil, (
 Informasi Cuaca, (3) Manajemen Hama, (4) Peta Persebaran Hama, (5) Foto
 Hitung Hama, dan (6) Artikel.
 Deskripsi Bagian Navigation Bar (di bawah layar)
+
+Berikut adalah cara bernavigasi di aplikasi MySalak:
 Navigation Bar adalah alat untuk berpindah antar halaman di aplikasi
 MySalak. 
 Berikut penjelasannya:
@@ -176,7 +178,6 @@ informasi kebun masing-masing.
 ● Detail Setiap Kebun:
 ○ Nama Kebun: Contoh: "Sumber Mulyo", "Si Cantik", dll.
 ○ Tanggal Data: Ditampilkan pada setiap kotak kebun.
-13
 ○ Nilai FTD berdasarkan tangkapan lalat buah (FTD): Contoh: 2,
 31, 25, dll.
 
@@ -223,8 +224,8 @@ informasi terkait manajemen hama pada area tersebut.
 2. Lihat Kotak Informasi Manajemen Hama
 ● Setelah memilih area kebun, akan muncul kotak informasi yang memuat
 data kebun seperti:
-○ Status: Indikator kondisi hama di kebun tersebut, seperti "Aman”,
-“Waspada”, atau “Bahaya”
+○ Status: Indikator kondisi hama di kebun tersebut, seperti "Aman",
+"Waspada", atau "Bahaya"
 ○ FTD (Fruit Fly Trapped per Day), ditampilkan dalam angka.
 
 Foto Hitung Hama
@@ -318,8 +319,8 @@ informasi terkait manajemen hama pada area tersebut.
 2. Lihat Kotak Informasi Manajemen Hama
 ● Setelah memilih area kebun, akan muncul kotak informasi yang memuat
 data kebun seperti:
-○ Status: Indikator kondisi hama di kebun tersebut, seperti "Aman”,
-“Waspada”, atau “Bahaya”
+○ Status: Indikator kondisi hama di kebun tersebut, seperti "Aman",
+"Waspada", atau "Bahaya"
 ○ FTD (Fruit Fly Trapped per Day), ditampilkan dalam angka.
 ○ Jumlah Perangkat: Pengguna dapat menambah atau
 mengurangi jumlah perangkat pengawasan hama langsung dari
